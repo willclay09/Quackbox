@@ -1,0 +1,23 @@
+#picture-form {
+  display: flex;
+  flex-direction: column;
+}
+.Image {
+  box-shadow: 5px 5px 8px blue;
+  width: 95%;
+}
+.FallBack {
+  color: black;
+}
+
+.Image:hover + .download-button {
+  opacity: 100%;
+}
+.download-button:hover {
+  opacity: 100%;
+}
+
+.download-button {
+  opacity: 10%;
+  font-size: 20px;
+}

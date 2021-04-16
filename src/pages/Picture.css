@@ -1,0 +1,29 @@
+.Carousel {
+  border: 2px solid blue;
+  /* border-radius: 0.5rem;
+  border-width: 0.5rem; */
+  margin: 10%;
+}
+.carousel-item img {
+  width: 33%;
+}
+.Duck {
+  border: 2px solid blue;
+  /* border-width: 0.5rem;
+  border-radius: 0.5rem; */
+  margin-top: 20px;
+}
+.Rubber {
+  color: red;
+}
+
+h4 {
+  color: red;
+}
+h5 {
+  color: red;
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  background-color: red;
+}

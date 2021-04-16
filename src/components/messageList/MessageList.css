@@ -1,0 +1,19 @@
+.Avatar {
+  width: 10%;
+  box-shadow: 5px 5px 8px;
+  position: relative;
+  bottom: 20px;
+  margin: 2px;
+  float: right;
+}
+
+.MessageLikeButton {
+  color: black;
+}
+
+.MessageUnlikeButton {
+  color: black;
+}
+.Hidden {
+  display: none;
+}

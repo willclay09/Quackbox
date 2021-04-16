@@ -1,0 +1,13 @@
+#message-form {
+  display: flex;
+  flex-direction: column;
+}
+.emoji-picker-react {
+  width: 100% !important;
+}
+.CreateQuack {
+  color: black;
+}
+.ResetQuack {
+  color: black;
+}

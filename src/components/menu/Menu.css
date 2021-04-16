@@ -1,0 +1,28 @@
+.Menu {
+  background-color: yellow;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1em;
+  border-radius: 1em;
+}
+h1 {
+  color: orangered;
+  font-weight: 1000;
+}
+
+#menu-links {
+  display: flex;
+  padding-left: 1em;
+}
+
+#menu-links a {
+  padding-right: 0.5em;
+  color: darkblue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.Avatar4 {
+  width: 7%;
+  box-shadow: 5px 5px 8px red;
+}

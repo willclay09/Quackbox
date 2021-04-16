@@ -1,0 +1,11 @@
+#registration-form {
+  display: flex;
+  flex-direction: column;
+}
+.RegisterMessage {
+  border: 2px solid yellow;
+  display: flex;
+  word-wrap: none;
+  background-color: #f1f1f1;
+  margin-top: 20px;
+}

@@ -1,0 +1,28 @@
+:root {
+  --image-size: 9.5rem;
+}
+.UserCard {
+  border: 2px solid yellow;
+  background-color: #d8d8d8;
+  border-radius: 50px;
+}
+.UserCard img {
+  margin: 0 auto 0 5px;
+  display: flex;
+  flex-direction: row;
+  height: var(--image-size);
+  width: var(--image-size);
+  border-radius: 50%;
+}
+
+.UserFlex {
+  display: inline-flex;
+  flex-direction: column;
+  word-wrap: break-word;
+  width: 30%;
+  padding: 5px;
+}
+.UserText {
+  display: flex;
+  flex-direction: row;
+}

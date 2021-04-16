@@ -1,0 +1,9 @@
+.Avatar3 {
+  width: 15%;
+  float: right;
+  box-shadow: 5px 5px 8px blue;
+}
+.form-control1 {
+  border: 2px solid red;
+  font-weight: bold;
+}
