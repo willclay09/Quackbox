@@ -4,6 +4,7 @@ import Join from "../components/join/Join";
 import { userIsAuthenticated } from "../redux/HOCs";
 import { Row, Col } from "react-bootstrap";
 import Search from "../components/search/Search";
+import ScrollUpButton from "react-scroll-up-button";
 
 class Quacks extends React.Component {
   render() {
@@ -15,6 +16,7 @@ class Quacks extends React.Component {
             <Join />
           </Col>
           <Col>
+            <ScrollUpButton />
             <Search />
           </Col>
         </Row>

@@ -3,38 +3,57 @@ import "./Input.css";
 import { userIsAuthenticated } from "../../redux/HOCs";
 import { Form, Button, Col } from "react-bootstrap";
 import Picker from "emoji-picker-react";
+import { useState } from "react";
 
-function Input({ props, onEmojiClick2, message, setMessage, sendMessage }) {
-  onEmojiClick2 = (event, emojiObject) => {
-    props.setState(
-      (props) => ({ message: props.payload.data + emojiObject.emoji }),
+function Input({ message, setMessage, sendMessage }) {
+  const [inputRef, setInputRef] = useState(null);
 
-      (props) => props.inputElement.focus()
-    );
+  const [pickerContainer, setPickerContainer] = useState(null);
+  const displayEmojiPickerWithCSS = () => {
+    const displayStates = {
+      none: "block",
+      block: "none",
+      "": "none",
+    };
+
+    const currentDisplayState = pickerContainer.style.display;
+    pickerContainer.style.display = displayStates[currentDisplayState];
   };
-  console.log(props);
+
+  const onEmojiClick = (event, emojiObject) => {
+    setMessage(message + emojiObject.emoji);
+    inputRef.focus();
+  };
+
+  const inputOnChange = (event) => {
+    const inputElement = event.target;
+    setMessage(inputElement.value);
+  };
+
+  console.log({ message });
   return (
     <div>
       <Form className="form">
+        <div className="textInputOptions">
+          <div className="emoji-trigger" onClick={displayEmojiPickerWithCSS}>
+            😎
+          </div>
+        </div>
         <Form.Control
           className="input"
           type="text"
           placeholder="Type a message..."
+          ref={setInputRef}
           value={message}
-          // ref={(element) => (props.inputElement = element)}
-          onChange={({ target: { value } }) => setMessage(value)}
-          onKeyPress={(event) =>
-            event.key === "Enter" ? sendMessage(event) : null
-          }
+          onChange={inputOnChange}
+          onKeyPress={(event) => event.key === "Enter" && sendMessage(event)}
         ></Form.Control>
         <Button className="sendButton" onClick={(event) => sendMessage(event)}>
           Send
         </Button>
       </Form>
-      <Col>
-        <div>
-          <Picker className="picker" onEmojiClick2={onEmojiClick2} />
-        </div>
+      <Col className="picker-container" ref={setPickerContainer}>
+        <Picker className="picker" onEmojiClick={onEmojiClick} />
       </Col>
     </div>
   );

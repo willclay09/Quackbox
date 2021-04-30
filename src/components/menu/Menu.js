@@ -13,7 +13,7 @@ class Menu extends React.Component {
     return (
       <div className="Menu">
         <h1>
-          Duckbook
+          Quackbox
           <img
             className="Avatar4"
             src="https://image.flaticon.com/icons/png/512/1395/1395203.png"
