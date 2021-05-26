@@ -40,12 +40,12 @@ class DataService {
       });
   }
   getUserName() {
-    const { username } = store.getState().auth.login.result;
-    return username;
+    const loginResult = store.getState().auth.login.result;
+    return loginResult && loginResult.username;
   }
   getToken() {
-    const { token } = store.getState().auth.login.result;
-    return token;
+    const loginResult = store.getState().auth.login.result;
+    return loginResult && loginResult.token;
   }
   registerUser(registrationData) {
     return this.client.post(this.url + "/users", registrationData);

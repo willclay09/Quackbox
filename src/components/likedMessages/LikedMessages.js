@@ -57,8 +57,6 @@ class LikedMessages extends React.Component {
                     <div className="Menu"></div>
 
                     <div className="MessageList">
-                      <div className="hide">{JSON.stringify(this.state)}</div>
-
                       {this.state.messages.map((message) => (
                         <div key={message.id} className="MessageWrap">
                           <div className="UserName">
@@ -66,7 +64,7 @@ class LikedMessages extends React.Component {
                           </div>
                           <img
                             className="Avatar2"
-                            src="https://www.shareicon.net/data/512x512/2015/10/18/658216_duck_512x512.png"
+                            src="images/rubber-duck.jpg"
                             alt="Icon"
                           ></img>
                           <div className="MessageText">
@@ -75,10 +73,7 @@ class LikedMessages extends React.Component {
 
                           <div className="LikeWrap">
                             <div className="LikesTitle">
-                              Likes:{" "}
-                              <a href="#" onClick={this.showDiv}>
-                                {message.likes.length}
-                              </a>
+                              Likes: {message.likes.length}
                             </div>
                             {message.likes.map((like) => (
                               <div

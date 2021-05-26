@@ -31,7 +31,7 @@ function WebCamCapture(props) {
       <div className="webcam">
         {devices.map((device, index) => {
           return (
-            <div>
+            <div key={index}>
               <Webcam
                 videoConstraints={{ deviceId: device.deviceId }}
                 audio={false}

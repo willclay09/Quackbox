@@ -98,7 +98,7 @@ class MessageList extends React.Component {
                           </div>
                           <img
                             className="Avatar"
-                            src="https://thumbs.dreamstime.com/b/yellow-rubber-duck-icon-fun-bath-illustration-70823108.jpg"
+                            src="images/rubber-duck.jpg"
                             alt="Icon"
                           ></img>
                           <div className="MessageText">
@@ -143,10 +143,7 @@ class MessageList extends React.Component {
 
                           <div className="LikeWrap">
                             <div className="LikesTitle">
-                              Likes:{" "}
-                              <a href="#" onClick={this.showDiv}>
-                                {message.likes.length}
-                              </a>
+                              Likes: {message.likes.length}
                             </div>
                             {message.likes.map((like) => (
                               <div

@@ -53,19 +53,11 @@ class UserMessages extends React.Component {
   }
 
   render() {
-    let noMessages;
-    if (this.state.messages.length === 0) {
-      // console.log("hi");
-      noMessages = (
-        <div>
-          <img
-            className="Quackless"
-            src="https://i3.cpcache.com/product/189298071/rubber_duck_no_quacks_35_button.jpg?height=460&width=460&qv=90"
-          ></img>
-        </div>
-      );
-      // console.log(noMessages);
-    }
+    const noMessages =
+      this.state.messages.length === 0 ? (
+        <img className="Quackless" src="images/nothing-to-quack-about.png" />
+      ) : undefined;
+
     return (
       <div className="pageWrap">
         <h3>Users Quacks</h3>
@@ -73,15 +65,13 @@ class UserMessages extends React.Component {
           <Form.Group>
             <div className="Menu"></div>
             <div className="MessageList">
-              <div className="hide">{JSON.stringify(this.state)}</div>
-
               {noMessages}
               {this.state.messages.map((message) => (
                 <div key={message.id} className="MessageWrap">
                   <div className="UserName">User Name: {message.username}</div>
                   <img
                     className="Avatar3"
-                    src="https://th.bing.com/th/id/OIP.Yep2z4oBZJjX6LDbL-BoiwHaH_?pid=Api&rs=1"
+                    src="images/rubber-duck.jpg"
                     alt="Icon"
                   ></img>
                   <div className="MessageText">Message: {message.text}</div>
@@ -98,7 +88,7 @@ class UserMessages extends React.Component {
                         width="2rem"
                         height="2rem"
                         fill="currentColor"
-                        class="bi bi-emoji-frown-fill"
+                        className="bi bi-emoji-frown-fill"
                         viewBox="0 0 16 16"
                         color="yellow"
                       >
@@ -106,23 +96,6 @@ class UserMessages extends React.Component {
                       </svg>
                       Delete
                     </Button>
-                  </div>
-                  <div className="LikeWrap">
-                    <div className="LikesTitle">
-                      Likes:{" "}
-                      <a href="#" onClick={this.showDiv}>
-                        {message.likes.length}
-                      </a>
-                    </div>
-                    {message.likes.map((like) => (
-                      <div
-                        key={like.id}
-                        id="LikeUsers"
-                        className="LikesUserName"
-                      >
-                        {like.username}
-                      </div>
-                    ))}
                   </div>
                 </div>
               ))}

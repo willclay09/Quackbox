@@ -58,8 +58,7 @@ class SetPicture extends React.Component {
   };
 
   setFallbackImage = (e) => {
-    e.target.src =
-      "https://blogs-images.forbes.com/patrickhanlon/files/2014/06/rubber-duck.jpg";
+    e.target.src = "images/rubber-duck.jpg";
   };
 
   handlePicture = (e) => {
