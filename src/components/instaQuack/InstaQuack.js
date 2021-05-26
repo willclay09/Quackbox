@@ -7,8 +7,10 @@ import InfoBar from "../infobar/InfoBar";
 import Input from "../input/Input";
 import AllMessages from "../allMessages/AllMessages";
 import TextContainer from "../textContainer/TextContainer";
+import { Form } from "react-bootstrap";
 
-let socket;
+const endpoint = "http://localhost:3001";
+const socket = io(endpoint);
 
 function InstaQuack({ location }) {
   const [name, setName] = useState("");
@@ -16,11 +18,9 @@ function InstaQuack({ location }) {
   const [users, setUsers] = useState("");
   const [message, setMessage] = useState("");
   const [messages, setMessages] = useState([]);
-  const Endpoint = "http://localhost:3001";
 
   useEffect(() => {
     const { name, room } = queryString.parse(location.search);
-    socket = io(Endpoint);
 
     setName(name);
     setRoom(room);
@@ -30,17 +30,19 @@ function InstaQuack({ location }) {
         alert(error);
       }
     });
+
     return () => {
       socket.emit("disconnect");
 
       socket.off();
     };
-  }, [Endpoint, location.search]);
+  }, [endpoint, location.search]);
 
   useEffect(() => {
     socket.on("message", (message) => {
       setMessages((messages) => [...messages, message]);
     });
+
     socket.on("roomData", ({ users }) => {
       setUsers(users);
     });
@@ -57,18 +59,21 @@ function InstaQuack({ location }) {
   console.log(message, messages);
 
   return (
-    <div className="outerContainer">
-      <div className="container">
-        <InfoBar room={room} />
-        <AllMessages messages={messages} name={name} />
-        <Input
-          message={message}
-          setMessage={setMessage}
-          sendMessage={sendMessage}
-        />
+    <Form>
+      <div className="outerContainer">
+        <div className="container">
+          <InfoBar room={room} />
+          <AllMessages messages={messages} name={name} />
+          <Input
+            message={message}
+            setMessage={setMessage}
+            sendMessage={sendMessage}
+          />
+        </div>
+
+        <TextContainer users={users} />
       </div>
-      <TextContainer users={users} />
-    </div>
+    </Form>
   );
 }
 // from Adrian Hajdin - JavaScript Mastery https://github.com/adrianhajdin/project_chat_application

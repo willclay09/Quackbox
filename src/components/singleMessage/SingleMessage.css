@@ -1,3 +1,12 @@
+/* .messageContainer {} */
+
+.justifyEnd {
+  text-align: right;
+}
+.justifyStart {
+  text-align: left;
+}
+
 .messageBox {
   background: #f3f3f3;
   border-radius: 20px;
@@ -24,5 +33,5 @@
 .sentText {
   font-weight: bold;
   font-size: x-large;
-  font-style: italic;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }

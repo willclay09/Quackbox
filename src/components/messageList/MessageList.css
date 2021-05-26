@@ -8,11 +8,23 @@
 }
 
 .MessageLikeButton {
-  color: black;
+  position: relative;
+  left: 60px;
 }
-
+.ThumbsUp {
+  position: relative;
+  left: 160px;
+  font-weight: bold;
+}
 .MessageUnlikeButton {
-  color: black;
+  position: relative;
+  left: 70px;
+}
+.ThumbsDown {
+  position: relative;
+  left: 245px;
+  bottom: 30px;
+  font-weight: bold;
 }
 .Hidden {
   display: none;

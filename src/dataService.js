@@ -7,6 +7,11 @@ import {
 import { store } from "./redux";
 
 // const { username, token } = store.getState().auth.login.result;
+// const ENV = process.env.NODE_ENV || "dev";
+// const endpoint =
+//   ENV === "prod"
+//     ? "https://socialapp-api.herokuapp.com"
+//     : "https://localhost:3001";
 
 class DataService {
   constructor(

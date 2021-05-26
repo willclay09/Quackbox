@@ -543,12 +543,12 @@ function Picture(props) {
               </Carousel.Item>
               <Carousel.Item>
                 <img
-                  className="Duckinator"
-                  src="https://cdn7.bigcommerce.com/s-90c91/images/stencil/500x659/products/3131/6993/duckinator_in_box_high_rez__04942.1505931773.jpg?c=2"
-                  alt="Terminator Duck"
+                  className="Chewy"
+                  src="https://www.amsterdamduckstore.com/wp-content/uploads/2016/05/Chewquacker-rubber-duck-front-Amsterdam-Duck-Store.jpg"
+                  alt="Chewbacca Duck"
                 />
                 <Carousel.Caption>
-                  <h3>Terminator Duck</h3>
+                  <h3>Chewbacca Duck</h3>
                   <p></p>
                 </Carousel.Caption>
               </Carousel.Item>

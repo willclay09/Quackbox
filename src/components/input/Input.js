@@ -33,12 +33,19 @@ function Input({ message, setMessage, sendMessage }) {
   console.log({ message });
   return (
     <div>
-      <Form className="form">
-        <div className="textInputOptions">
-          <div className="emoji-trigger" onClick={displayEmojiPickerWithCSS}>
-            😎
-          </div>
-        </div>
+      <Form className="formInput">
+        <Col>
+          <Form.Group>
+            <div className="textInputOptions">
+              <div
+                className="emoji-trigger"
+                onClick={displayEmojiPickerWithCSS}
+              >
+                😎
+              </div>
+            </div>
+          </Form.Group>
+        </Col>
         <Form.Control
           className="input"
           type="text"

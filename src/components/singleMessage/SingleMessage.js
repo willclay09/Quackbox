@@ -11,20 +11,14 @@ function SingleMessage({ message: { user, text }, name }) {
   if (user === trimmedName) {
     isSentByCurrentUser = true;
   }
-  return isSentByCurrentUser ? (
-    <div className="messageContainer justifyEnd">
-      <p className="sentText">{trimmedName}</p>
+
+  return (
+    <div className={isSentByCurrentUser ? "justifyEnd" : "justifyStart"}>
+      <p className="sentText">{isSentByCurrentUser ? trimmedName : user}</p>
 
       <div className="messageBox">
         <p className="messageText">{ReactEmoji.emojify(text)}</p>
       </div>
-    </div>
-  ) : (
-    <div className=" messageContainer justifyStart">
-      <div className="messageBox">
-        <p className="messageText">{ReactEmoji.emojify(text)}</p>
-      </div>
-      <p className="sentText">{user}</p>
     </div>
   );
 }

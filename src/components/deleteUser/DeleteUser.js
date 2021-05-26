@@ -15,7 +15,6 @@ function DeleteUser(props, handleDelete) {
 
   handleDelete = (props) => {
     client.deleteUsers(props).then(() => {
-      console.log("hi");
       props.setState({
         username: props.data.username,
       });

@@ -3,20 +3,23 @@ import "./InfoBar.css";
 import { userIsAuthenticated } from "../../redux/HOCs";
 import closeIcon from "../icons/closeIcon.png";
 import onLineIcon from "../icons/onlineIcon.png";
+import { Form } from "react-bootstrap";
 
 function InfoBar({ room }) {
   return (
-    <div className="infoBar">
-      <div className="leftInnerContainer">
-        <img className="onlineIcon" src={onLineIcon} alt="online" />
-        <h3>{room}</h3>
+    <Form>
+      <div className="infoBar">
+        <div className="leftInnerContainer">
+          <img className="onlineIcon" src={onLineIcon} alt="online" />
+          <h3>{room}</h3>
+        </div>
+        <div className="rightInnerContainer">
+          <a href="../Quacks">
+            <img className="closeIcon" src={closeIcon} alt="close" />
+          </a>
+        </div>
       </div>
-      <div className="rightInnerContainer">
-        <a href="../Quacks">
-          <img className="closeIcon" src={closeIcon} alt="close" />
-        </a>
-      </div>
-    </div>
+    </Form>
   );
 }
 // from Adrian Hajdin - JavaScript Mastery https://github.com/adrianhajdin/project_chat_application
