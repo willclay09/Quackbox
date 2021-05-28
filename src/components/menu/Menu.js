@@ -16,7 +16,7 @@ class Menu extends React.Component {
           Quackbox
           <img
             className="Avatar4"
-            src="https://image.flaticon.com/icons/png/512/1395/1395203.png"
+            src="images/rubber-duck-icon.png"
             alt="Icon"
           ></img>
         </h1>

@@ -40,7 +40,7 @@ class LikedMessages extends React.Component {
       this.setState({
         messages: result.data.messages,
       });
-      this.getListOfMessages();
+      // this.getListOfMessages();
     });
   }
 
@@ -64,7 +64,7 @@ class LikedMessages extends React.Component {
                           </div>
                           <img
                             className="Avatar2"
-                            src="images/rubber-duck.jpg"
+                            src="images/duck-icon.png"
                             alt="Icon"
                           ></img>
                           <div className="MessageText">

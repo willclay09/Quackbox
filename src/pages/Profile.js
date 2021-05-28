@@ -23,10 +23,9 @@ class Profile extends React.Component {
             <UpdateUser />
             <DeleteUser />
           </Col>
+
           <Col>
-            <div className="Liked1">
-              <LikedMessages />
-            </div>
+            <LikedMessages />
           </Col>
         </Row>
       </div>

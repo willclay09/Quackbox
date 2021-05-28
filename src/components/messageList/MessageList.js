@@ -89,8 +89,6 @@ class MessageList extends React.Component {
                   <Form.Text>
                     <div className="Menu"></div>
                     <div className="MessageList">
-                      <div className="hide">{JSON.stringify(this.state)}</div>
-
                       {this.state.messages.map((message) => (
                         <div key={message.id} className="MessageWrap">
                           <div className="UserName">
