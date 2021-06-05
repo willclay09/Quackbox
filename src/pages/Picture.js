@@ -29,7 +29,6 @@ function Picture(props) {
               <Carousel.Item>
                 <img className="Bat" src="images/batman.jpg" alt="Bat Duck" />
                 <Carousel.Caption>
-                  <h4>Bat Duck</h4>
                   <p></p>
                 </Carousel.Caption>
               </Carousel.Item>
@@ -37,7 +36,6 @@ function Picture(props) {
                 <img className="snow" src="images/snow.jpg" alt="snow Duck" />
 
                 <Carousel.Caption>
-                  <h4>Snow Duck</h4>
                   <p></p>
                 </Carousel.Caption>
               </Carousel.Item>
@@ -48,7 +46,6 @@ function Picture(props) {
                   alt="angel Duck"
                 />
                 <Carousel.Caption>
-                  <h6>Angel Duck</h6>
                   <p></p>
                 </Carousel.Caption>
               </Carousel.Item>
@@ -60,7 +57,6 @@ function Picture(props) {
                 />
 
                 <Carousel.Caption>
-                  <h5>Clock Duck</h5>
                   <p></p>
                 </Carousel.Caption>
               </Carousel.Item>
@@ -72,7 +68,6 @@ function Picture(props) {
                 />
 
                 <Carousel.Caption>
-                  <h4>Devil Duck</h4>
                   <p></p>
                 </Carousel.Caption>
               </Carousel.Item>
@@ -83,7 +78,6 @@ function Picture(props) {
                   alt="doctor Duck"
                 />
                 <Carousel.Caption>
-                  <h4>Doctor Duck</h4>
                   <p></p>
                 </Carousel.Caption>
               </Carousel.Item>
@@ -95,7 +89,6 @@ function Picture(props) {
                 />
 
                 <Carousel.Caption>
-                  <h5>Duck-fest Duck</h5>
                   <p></p>
                 </Carousel.Caption>
               </Carousel.Item>
@@ -107,14 +100,12 @@ function Picture(props) {
                 />
 
                 <Carousel.Caption>
-                  <h4>Fireman Duck</h4>
                   <p></p>
                 </Carousel.Caption>
               </Carousel.Item>
               <Carousel.Item>
                 <img className="" src="images/finger.jpg" alt="finger Ducks" />
                 <Carousel.Caption>
-                  <h5>finger Duck</h5>
                   <p></p>
                 </Carousel.Caption>
               </Carousel.Item>
@@ -126,7 +117,6 @@ function Picture(props) {
                 />
 
                 <Carousel.Caption>
-                  <h5>harley Quinn Duck</h5>
                   <p></p>
                 </Carousel.Caption>
               </Carousel.Item>
@@ -138,14 +128,12 @@ function Picture(props) {
                 />
 
                 <Carousel.Caption>
-                  <h5>Iron Madden Duck</h5>
                   <p></p>
                 </Carousel.Caption>
               </Carousel.Item>
               <Carousel.Item>
                 <img className="nun" src="images/nun.jpg" alt="nun Duck" />
                 <Carousel.Caption>
-                  <h5>Nun Duck</h5>
                   <p></p>
                 </Carousel.Caption>
               </Carousel.Item>
@@ -157,7 +145,6 @@ function Picture(props) {
                 />
 
                 <Carousel.Caption>
-                  <h4>Pirate Duck</h4>
                   <p></p>
                 </Carousel.Caption>
               </Carousel.Item>
@@ -169,7 +156,6 @@ function Picture(props) {
                 />
 
                 <Carousel.Caption>
-                  <h4>Queen Duck</h4>
                   <p></p>
                 </Carousel.Caption>
               </Carousel.Item>
@@ -180,7 +166,6 @@ function Picture(props) {
                   alt="st.patties Duck"
                 />
                 <Carousel.Caption>
-                  <h5>St.Patties Duck</h5>
                   <p></p>
                 </Carousel.Caption>
               </Carousel.Item>
@@ -192,7 +177,6 @@ function Picture(props) {
                 />
 
                 <Carousel.Caption>
-                  <h4>Surgeon Duck</h4>
                   <p></p>
                 </Carousel.Caption>
               </Carousel.Item>
@@ -204,7 +188,147 @@ function Picture(props) {
                 />
 
                 <Carousel.Caption>
-                  <h3>Wedding Duck</h3>
+                  <p></p>
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="cross"
+                  src="images/cross.jpg"
+                  alt="cross Duck"
+                />
+                <Carousel.Caption>
+                  <p></p>
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="flower"
+                  src="images/flower.jpg"
+                  alt="flower Duck"
+                />
+
+                <Carousel.Caption>
+                  <p></p>
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="flying-hat"
+                  src="images/flying-hat.jpg"
+                  alt="flying-hat Duck"
+                />
+
+                <Carousel.Caption>
+                  <p></p>
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="graduation"
+                  src="images/graduation.jpg"
+                  alt="graduation Duck"
+                />
+                <Carousel.Caption>
+                  <p></p>
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img className="grey" src="images/grey.jpg" alt="grey Duck" />
+
+                <Carousel.Caption>
+                  <p></p>
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img className="king" src="images/king.jpg" alt="king Duck" />
+
+                <Carousel.Caption>
+                  <p></p>
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="princess"
+                  src="images/princess.jpg"
+                  alt="princess Duck"
+                />
+                <Carousel.Caption>
+                  <p></p>
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="punk-band"
+                  src="images/punk-band.jpg"
+                  alt="punk-band Duck"
+                />
+
+                <Carousel.Caption>
+                  <p></p>
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="purple-queen"
+                  src="images/purple-queen.jpg"
+                  alt="purple-queen Duck"
+                />
+
+                <Carousel.Caption>
+                  <p></p>
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="skate-board"
+                  src="images/skate-board.jpg"
+                  alt="skate-board Duck"
+                />
+                <Carousel.Caption>
+                  <p></p>
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="scuba"
+                  src="images/scuba.jpg"
+                  alt="scuba Duck"
+                />
+
+                <Carousel.Caption>
+                  <p></p>
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="smart"
+                  src="images/smart.jpg"
+                  alt="smart Duck"
+                />
+
+                <Carousel.Caption>
+                  <p></p>
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="soccer-coach"
+                  src="images/soccer-coach.jpg"
+                  alt="coach Duck"
+                />
+                <Carousel.Caption>
+                  <p></p>
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="swimming"
+                  src="images/swimming.jpg"
+                  alt="swimming Duck"
+                />
+
+                <Carousel.Caption>
                   <p></p>
                 </Carousel.Caption>
               </Carousel.Item>

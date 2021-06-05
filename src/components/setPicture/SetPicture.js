@@ -2,7 +2,6 @@ import React from "react";
 import { userIsAuthenticated } from "../../redux/HOCs";
 import "./SetPicture.css";
 import DataService from "../../dataService";
-import Ducky from "../../components/image/Ducky.png";
 import { Button, Form } from "react-bootstrap";
 import WebCamCapture from "../webCamCapture/WebCamCapture";
 
@@ -17,6 +16,7 @@ class SetPicture extends React.Component {
       formData: null,
       url: `https://socialapp-api.herokuapp.com/`,
     };
+
     console.log(this.state.picture);
   }
 
@@ -52,8 +52,8 @@ class SetPicture extends React.Component {
     this.addFileToFormDataAndSend(file);
   };
 
-  addFileToImage = () => {
-    const file = dataURItoBlob(Ducky);
+  addFileToImage = (e) => {
+    const file = dataURItoBlob();
     this.addFileToFormDataAndSend(file);
   };
 

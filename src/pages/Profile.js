@@ -1,10 +1,10 @@
 import React from "react";
 import Menu from "../components/menu/Menu";
-import SetPicture from "../components/setPicture/SetPicture";
 import { userIsAuthenticated } from "../redux/HOCs";
-import UpdateUser from "../components/updateUser/UpdateUser";
-import "./Profile.css";
+import SetPicture from "../components/setPicture/SetPicture";
 import { Row, Col } from "react-bootstrap";
+import "./Profile.css";
+import UpdateUser from "../components/updateUser/UpdateUser";
 import DeleteUser from "../components/deleteUser/DeleteUser";
 import LikedMessages from "../components/likedMessages/LikedMessages";
 
@@ -19,11 +19,10 @@ class Profile extends React.Component {
             <SetPicture />
           </Col>
           <Col>
-            <h1>Profile</h1>
+            <h3>Profile</h3>
             <UpdateUser />
             <DeleteUser />
           </Col>
-
           <Col>
             <LikedMessages />
           </Col>

@@ -1,7 +1,6 @@
 import React from "react";
 import "./TextContainer.css";
 import { userIsAuthenticated } from "../../redux/HOCs";
-import onLineIcon from "../icons/onlineIcon.png";
 
 function TextContainer({ users }) {
   return (
@@ -28,7 +27,7 @@ function TextContainer({ users }) {
                   <img
                     className="textImage"
                     alt="Online Icon"
-                    src={onLineIcon}
+                    src="images/onlineIcon.png"
                   />
                 </div>
               ))}
