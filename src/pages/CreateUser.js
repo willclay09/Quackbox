@@ -21,7 +21,7 @@ class CreateUser extends React.Component {
             <h1 className="User">Create User</h1>
             <Image
               className="Fluid"
-              src="https://www.growthmentor.io/blog/wp-content/uploads/2019/02/Why-it-works_750x400.png"
+              src="https://img.itch.zone/aW1nLzI5NDY5MDUucG5n/508x254%23mb/qa3qSn.png"
               roundedCircle
             />
           </Col>

@@ -4,7 +4,7 @@ import "./UserList.css";
 import { Card, Form } from "react-bootstrap";
 
 function UserList(props) {
-  const defaultImageURL = "images/rubber-duck.jpg";
+  const defaultImageURL = "images/cancel.png";
 
   const addDefaultSrc = (e) => {
     e.target.src = defaultImageURL;

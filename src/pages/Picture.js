@@ -332,12 +332,41 @@ function Picture(props) {
                   <p></p>
                 </Carousel.Caption>
               </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="scholar"
+                  src="images/scholar.png"
+                  alt="scholar Duck"
+                />
+
+                <Carousel.Caption>
+                  <p></p>
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img className="girl" src="images/girl.jpg" alt="girl Duck" />
+                <Carousel.Caption>
+                  <p></p>
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="white-angel"
+                  src="images/white-angel.jpg"
+                  alt="white-angel Duck"
+                />
+
+                <Carousel.Caption>
+                  <p></p>
+                </Carousel.Caption>
+              </Carousel.Item>
             </Carousel>
           </div>
         </Col>
         <Col>
           <h1>Picture</h1>
           <Figure>
+            {/* https://blogs.ubc.ca/coetoolbox/vba/debugging/  */}
             <FigureImage
               className="Duck"
               alt="171x180"

@@ -20,7 +20,7 @@ class Home extends React.Component {
           <Col>
             <h2 className="Squeaky">Keep It Squeaky Clean</h2>
             <Image
-              src="https://funixx.files.wordpress.com/2015/11/tumblr_n70ml7ecgq1rhavdko1_500.png"
+              src="https://i.pinimg.com/originals/ca/19/8f/ca198f74f61b0978395aa5dd4deb4ec5.jpg"
               thumbnail
             />
           </Col>

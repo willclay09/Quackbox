@@ -1,7 +1,5 @@
 .Carousel {
   border: 2px solid blue;
-  /* border-radius: 0.5rem;
-  border-width: 0.5rem; */
   margin: 10%;
 }
 .carousel-item img {
@@ -9,8 +7,6 @@
 }
 .Duck {
   border: 2px solid blue;
-  /* border-width: 0.5rem;
-  border-radius: 0.5rem; */
   margin-top: 20px;
 }
 .Rubber {

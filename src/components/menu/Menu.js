@@ -2,6 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Menu.css";
 import { withAsyncAction } from "../../redux/HOCs";
+import { store } from "../../redux";
+
+const { username } = store.getState().auth.login?.result ?? {
+  username: "user",
+};
 
 class Menu extends React.Component {
   handleLogout = (event) => {
@@ -23,11 +28,11 @@ class Menu extends React.Component {
 
         {this.props.isAuthenticated && (
           <div id="menu-links">
-            <Link to="/Messages">Message Feed</Link>
-            <Link to="/Profile/:username">Profile</Link>
-            <Link to="/Connections">Connections</Link>
-            <Link to="/Picture">Picture</Link>
-            <Link to="/Quacks">Quacks</Link>
+            <Link to="/messages">Message Feed</Link>
+            <Link to="/profile/:username">Profile</Link>
+            <Link to="/connections">Connections</Link>
+            <Link to="/picture">Picture</Link>
+            <Link to="/quacks">Quacks</Link>
             <Link to="/" onClick={this.handleLogout}>
               Logout
             </Link>

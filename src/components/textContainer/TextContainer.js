@@ -27,7 +27,7 @@ function TextContainer({ users }) {
                   <img
                     className="textImage"
                     alt="Online Icon"
-                    src="images/onlineIcon.png"
+                    src="images/chatting.png"
                   />
                 </div>
               ))}

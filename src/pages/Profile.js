@@ -6,7 +6,6 @@ import { Row, Col } from "react-bootstrap";
 import "./Profile.css";
 import UpdateUser from "../components/updateUser/UpdateUser";
 import DeleteUser from "../components/deleteUser/DeleteUser";
-import LikedMessages from "../components/likedMessages/LikedMessages";
 
 class Profile extends React.Component {
   render() {
@@ -22,9 +21,6 @@ class Profile extends React.Component {
             <h3>Profile</h3>
             <UpdateUser />
             <DeleteUser />
-          </Col>
-          <Col>
-            <LikedMessages />
           </Col>
         </Row>
       </div>
