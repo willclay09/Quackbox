@@ -31,15 +31,13 @@ class LikedMessages extends React.Component {
   }
 
   componentDidMount() {
-    this.getListOfMessages();
+    this.getListOfLikedMessages();
   }
 
-  getListOfMessages(likes) {
-    return this.client.mostLikedMessages(likes).then((result) => {
-      // console.log(result.data);
-      this.setState({
-        messages: result.data.messages,
-      });
+  getListOfLikedMessages() {
+    return this.client.mostLikedMessages().then((messages) => {
+      console.log({ messages });
+      this.setState({ messages });
       // this.getListOfMessages();
     });
   }
@@ -64,7 +62,7 @@ class LikedMessages extends React.Component {
                           </div>
                           <img
                             className="Avatar2"
-                            src="images/duck-icon.png"
+                            src="/images/duck-icon.png"
                             alt="Icon"
                           ></img>
                           <div className="MessageText">

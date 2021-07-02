@@ -11,14 +11,18 @@ function InfoBar({ room }) {
         <div className="leftInnerContainer">
           <img
             className="onlineIcon"
-            src="images/onlineIcon.png"
+            src="/images/onlineIcon.png"
             alt="online"
           />
           <h3>{room}</h3>
         </div>
         <div className="rightInnerContainer">
           <a href="../Quacks">
-            <img className="closeIcon" src="images/closeIcon.png" alt="close" />
+            <img
+              className="closeIcon"
+              src="/images/closeIcon.png"
+              alt="close"
+            />
           </a>
         </div>
       </div>

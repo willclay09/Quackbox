@@ -27,13 +27,13 @@ function Picture(props) {
               onSelect={handleSelect}
             >
               <Carousel.Item>
-                <img className="Bat" src="images/batman.jpg" alt="Bat Duck" />
+                <img className="Bat" src="/images/batman.jpg" alt="Bat Duck" />
                 <Carousel.Caption>
                   <p></p>
                 </Carousel.Caption>
               </Carousel.Item>
               <Carousel.Item>
-                <img className="snow" src="images/snow.jpg" alt="snow Duck" />
+                <img className="snow" src="/images/snow.jpg" alt="snow Duck" />
 
                 <Carousel.Caption>
                   <p></p>
@@ -42,7 +42,7 @@ function Picture(props) {
               <Carousel.Item>
                 <img
                   className="angel"
-                  src="images/angel.jpg"
+                  src="/images/angel.jpg"
                   alt="angel Duck"
                 />
                 <Carousel.Caption>
@@ -52,7 +52,7 @@ function Picture(props) {
               <Carousel.Item>
                 <img
                   className="clock"
-                  src="images/clock.jpg "
+                  src="/images/clock.jpg "
                   alt="Clock Body"
                 />
 
@@ -63,7 +63,7 @@ function Picture(props) {
               <Carousel.Item>
                 <img
                   className="devil"
-                  src="images/devil.jpg"
+                  src="/images/devil.jpg"
                   alt="devil Duck"
                 />
 
@@ -74,7 +74,7 @@ function Picture(props) {
               <Carousel.Item>
                 <img
                   className="doctor"
-                  src="images/doctor.jpg"
+                  src="/images/doctor.jpg"
                   alt="doctor Duck"
                 />
                 <Carousel.Caption>
@@ -84,7 +84,7 @@ function Picture(props) {
               <Carousel.Item>
                 <img
                   className="duck-fest"
-                  src="images/duck-fest.jpg"
+                  src="/images/duck-fest.jpg"
                   alt="duck-fest Duck"
                 />
 
@@ -95,7 +95,7 @@ function Picture(props) {
               <Carousel.Item>
                 <img
                   className="fireman"
-                  src="images/fireman.jpg"
+                  src="/images/fireman.jpg"
                   alt="fireman Duck"
                 />
 
@@ -104,7 +104,7 @@ function Picture(props) {
                 </Carousel.Caption>
               </Carousel.Item>
               <Carousel.Item>
-                <img className="" src="images/finger.jpg" alt="finger Ducks" />
+                <img className="" src="/images/finger.jpg" alt="finger Ducks" />
                 <Carousel.Caption>
                   <p></p>
                 </Carousel.Caption>
@@ -112,7 +112,7 @@ function Picture(props) {
               <Carousel.Item>
                 <img
                   className="harley-quinn"
-                  src="images/harley-quinn.jpg"
+                  src="/images/harley-quinn.jpg"
                   alt="harley Quinn Duck"
                 />
 
@@ -123,7 +123,7 @@ function Picture(props) {
               <Carousel.Item>
                 <img
                   className="Iron Madden"
-                  src="images/iron-madden.jpg"
+                  src="/images/iron-madden.jpg"
                   alt="Iron Duck"
                 />
 
@@ -132,7 +132,7 @@ function Picture(props) {
                 </Carousel.Caption>
               </Carousel.Item>
               <Carousel.Item>
-                <img className="nun" src="images/nun.jpg" alt="nun Duck" />
+                <img className="nun" src="/images/nun.jpg" alt="nun Duck" />
                 <Carousel.Caption>
                   <p></p>
                 </Carousel.Caption>
@@ -140,7 +140,7 @@ function Picture(props) {
               <Carousel.Item>
                 <img
                   className="pirate"
-                  src="images/pirate.jpg"
+                  src="/images/pirate.jpg"
                   alt="pirate Duck"
                 />
 
@@ -151,7 +151,7 @@ function Picture(props) {
               <Carousel.Item>
                 <img
                   className="queen"
-                  src="images/queen.jpg"
+                  src="/images/queen.jpg"
                   alt="queen Duck"
                 />
 
@@ -162,7 +162,7 @@ function Picture(props) {
               <Carousel.Item>
                 <img
                   className="st.patties"
-                  src="images/st-patties.jpg"
+                  src="/images/st-patties.jpg"
                   alt="st.patties Duck"
                 />
                 <Carousel.Caption>
@@ -172,7 +172,7 @@ function Picture(props) {
               <Carousel.Item>
                 <img
                   className="surgeon"
-                  src="images/surgeon.jpg"
+                  src="/images/surgeon.jpg"
                   alt="surgeon Duck"
                 />
 
@@ -183,7 +183,7 @@ function Picture(props) {
               <Carousel.Item>
                 <img
                   className="wedding"
-                  src="images/wedding.jpg"
+                  src="/images/wedding.jpg"
                   alt="wedding Duck"
                 />
 
@@ -194,7 +194,7 @@ function Picture(props) {
               <Carousel.Item>
                 <img
                   className="cross"
-                  src="images/cross.jpg"
+                  src="/images/cross.jpg"
                   alt="cross Duck"
                 />
                 <Carousel.Caption>
@@ -204,7 +204,7 @@ function Picture(props) {
               <Carousel.Item>
                 <img
                   className="flower"
-                  src="images/flower.jpg"
+                  src="/images/flower.jpg"
                   alt="flower Duck"
                 />
 
@@ -215,7 +215,7 @@ function Picture(props) {
               <Carousel.Item>
                 <img
                   className="flying-hat"
-                  src="images/flying-hat.jpg"
+                  src="/images/flying-hat.jpg"
                   alt="flying-hat Duck"
                 />
 
@@ -226,7 +226,7 @@ function Picture(props) {
               <Carousel.Item>
                 <img
                   className="graduation"
-                  src="images/graduation.jpg"
+                  src="/images/graduation.jpg"
                   alt="graduation Duck"
                 />
                 <Carousel.Caption>
@@ -234,14 +234,14 @@ function Picture(props) {
                 </Carousel.Caption>
               </Carousel.Item>
               <Carousel.Item>
-                <img className="grey" src="images/grey.jpg" alt="grey Duck" />
+                <img className="grey" src="/images/grey.jpg" alt="grey Duck" />
 
                 <Carousel.Caption>
                   <p></p>
                 </Carousel.Caption>
               </Carousel.Item>
               <Carousel.Item>
-                <img className="king" src="images/king.jpg" alt="king Duck" />
+                <img className="king" src="/images/king.jpg" alt="king Duck" />
 
                 <Carousel.Caption>
                   <p></p>
@@ -250,7 +250,7 @@ function Picture(props) {
               <Carousel.Item>
                 <img
                   className="princess"
-                  src="images/princess.jpg"
+                  src="/images/princess.jpg"
                   alt="princess Duck"
                 />
                 <Carousel.Caption>
@@ -260,7 +260,7 @@ function Picture(props) {
               <Carousel.Item>
                 <img
                   className="punk-band"
-                  src="images/punk-band.jpg"
+                  src="/images/punk-band.jpg"
                   alt="punk-band Duck"
                 />
 
@@ -271,7 +271,7 @@ function Picture(props) {
               <Carousel.Item>
                 <img
                   className="purple-queen"
-                  src="images/purple-queen.jpg"
+                  src="/images/purple-queen.jpg"
                   alt="purple-queen Duck"
                 />
 
@@ -282,7 +282,7 @@ function Picture(props) {
               <Carousel.Item>
                 <img
                   className="skate-board"
-                  src="images/skate-board.jpg"
+                  src="/images/skate-board.jpg"
                   alt="skate-board Duck"
                 />
                 <Carousel.Caption>
@@ -292,7 +292,7 @@ function Picture(props) {
               <Carousel.Item>
                 <img
                   className="scuba"
-                  src="images/scuba.jpg"
+                  src="/images/scuba.jpg"
                   alt="scuba Duck"
                 />
 
@@ -303,7 +303,7 @@ function Picture(props) {
               <Carousel.Item>
                 <img
                   className="smart"
-                  src="images/smart.jpg"
+                  src="/images/smart.jpg"
                   alt="smart Duck"
                 />
 
@@ -314,7 +314,7 @@ function Picture(props) {
               <Carousel.Item>
                 <img
                   className="soccer-coach"
-                  src="images/soccer-coach.jpg"
+                  src="/images/soccer-coach.jpg"
                   alt="coach Duck"
                 />
                 <Carousel.Caption>
@@ -324,7 +324,7 @@ function Picture(props) {
               <Carousel.Item>
                 <img
                   className="swimming"
-                  src="images/swimming.jpg"
+                  src="/images/swimming.jpg"
                   alt="swimming Duck"
                 />
 
@@ -335,7 +335,7 @@ function Picture(props) {
               <Carousel.Item>
                 <img
                   className="scholar"
-                  src="images/scholar.png"
+                  src="/images/scholar.png"
                   alt="scholar Duck"
                 />
 
@@ -344,7 +344,7 @@ function Picture(props) {
                 </Carousel.Caption>
               </Carousel.Item>
               <Carousel.Item>
-                <img className="girl" src="images/girl.jpg" alt="girl Duck" />
+                <img className="girl" src="/images/girl.jpg" alt="girl Duck" />
                 <Carousel.Caption>
                   <p></p>
                 </Carousel.Caption>
@@ -352,7 +352,7 @@ function Picture(props) {
               <Carousel.Item>
                 <img
                   className="white-angel"
-                  src="images/white-angel.jpg"
+                  src="/images/white-angel.jpg"
                   alt="white-angel Duck"
                 />
 

@@ -33,7 +33,7 @@ class UserPagination extends React.Component {
       if (payload.data.statusCode === 200) {
         this.setState({ users, count });
       } else {
-        console.log(payload);
+        // console.log(payload);
         // set user list to empty2
         this.setState({
           users: [],

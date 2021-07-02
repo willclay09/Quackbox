@@ -4,7 +4,7 @@ import "./UserList.css";
 import { Card, Form } from "react-bootstrap";
 
 function UserList(props) {
-  const defaultImageURL = "images/cancel.png";
+  const defaultImageURL = "/images/cancel.png";
 
   const addDefaultSrc = (e) => {
     e.target.src = defaultImageURL;
@@ -15,7 +15,7 @@ function UserList(props) {
       ? props.users
       : new Array(props.perPageCount).fill({});
 
-  console.log({ users });
+  // console.log({ users });
 
   return (
     <div className="float-left">

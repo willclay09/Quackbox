@@ -1,7 +1,6 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { store } from "./redux";
 import Home from "./pages/Home";
 import Profile from "./pages/Profile";
 import NotFound from "./pages/NotFound";
@@ -11,10 +10,6 @@ import Connections from "./pages/Connections";
 import Picture from "./pages/Picture";
 import Quacks from "./pages/Quacks";
 import InstaQuack from "./components/instaQuack/InstaQuack";
-
-const { username } = store.getState().auth.login?.result ?? {
-  username: "user",
-};
 
 class App extends React.Component {
   render() {

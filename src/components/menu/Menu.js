@@ -2,11 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Menu.css";
 import { withAsyncAction } from "../../redux/HOCs";
-import { store } from "../../redux";
-
-const { username } = store.getState().auth.login?.result ?? {
-  username: "user",
-};
 
 class Menu extends React.Component {
   handleLogout = (event) => {
@@ -21,7 +16,7 @@ class Menu extends React.Component {
           Quackbox
           <img
             className="Avatar4"
-            src="images/rubber-duck-icon.png"
+            src="/images/rubber-duck-icon.png"
             alt="Icon"
           ></img>
         </h1>

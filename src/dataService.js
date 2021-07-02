@@ -86,8 +86,19 @@ class DataService {
     };
     return this.client.put(imageURL, formData, config);
   }
+
   mostLikedMessages(limit = 10) {
-    return this.client.get(this.url + `/messages/?limit=${limit}`);
+    const byGreatest = (messageA, messageB) => {
+      return messageA.likes.length > messageB.likes.length ? -1 : +1;
+    };
+
+    return this.client
+      .get(this.url + `/messages/?limit=${limit}`)
+      .then(({ data }) => {
+        if (!data || !data.messages) return [];
+
+        return data.messages.sort(byGreatest);
+      });
   }
 
   getUsers() {

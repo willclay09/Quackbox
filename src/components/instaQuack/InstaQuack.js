@@ -56,7 +56,7 @@ function InstaQuack({ location }) {
     }
   };
 
-  console.log(message, messages);
+  // console.log(message, messages);
 
   return (
     <Form>

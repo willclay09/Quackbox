@@ -7,17 +7,18 @@ import Button from "react-bootstrap/Button";
 import { useState } from "react";
 
 let client = new DataService();
-function DeleteUser(props, handleDelete) {
+function DeleteUser() {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-  handleDelete = (props) => {
+  const handleDelete = (props) => {
     client.deleteUsers(props).then(() => {
       props.setState({
         username: props.data.username,
       });
+      console.log();
     });
     window.localStorage.removeItem("login");
     window.location.reload();

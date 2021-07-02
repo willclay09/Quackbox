@@ -44,7 +44,7 @@ class UpdateUser extends React.Component {
     };
     this.UpdateUserService.updateInfo(updateData)
       .then((result) => {
-        console.log(result);
+        // console.log(result);
       })
       .catch((error) => console.log(error));
     this.setState({ submitted: true });
@@ -56,7 +56,7 @@ class UpdateUser extends React.Component {
     };
     this.UpdateUserService.updateInfo(updatePassword)
       .then((result) => {
-        console.log(result);
+        // console.log(result);
       })
       .catch((error) => console.log(error));
     this.setState({ submitted: true });

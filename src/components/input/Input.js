@@ -30,7 +30,7 @@ function Input({ message, setMessage, sendMessage }) {
     setMessage(inputElement.value);
   };
 
-  console.log({ message });
+  // console.log({ message });
   return (
     <div>
       <Form className="formInput">

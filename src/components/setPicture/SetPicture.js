@@ -17,7 +17,7 @@ class SetPicture extends React.Component {
       url: `https://socialapp-api.herokuapp.com/`,
     };
 
-    console.log(this.state.picture);
+    // console.log(this.state.picture);
   }
 
   componentDidMount() {
@@ -44,7 +44,6 @@ class SetPicture extends React.Component {
   addEncodedImageFile = (encodedImage) => {
     const file = dataURItoBlob(encodedImage);
     this.addFileToFormDataAndSend(file);
-    console.log(file);
   };
 
   addFileToForm = (event) => {
@@ -52,13 +51,13 @@ class SetPicture extends React.Component {
     this.addFileToFormDataAndSend(file);
   };
 
-  addFileToImage = (e) => {
-    const file = dataURItoBlob();
-    this.addFileToFormDataAndSend(file);
-  };
+  // setDefaultImageInState = () => {
+  //   const path = "/images/scholar1.png";
+  //   this.setState({ picture: path }, this.handlePicture);
+  // };
 
   setFallbackImage = (e) => {
-    e.target.src = "images/ducky.png";
+    e.target.src = "/images/ducky.png";
   };
 
   handlePicture = (e) => {
@@ -77,7 +76,7 @@ class SetPicture extends React.Component {
     //   /^data:image\/[^;]+/,
     //   "data:application/octet-stream"
     // );
-    console.log(this.state.picture);
+    // console.log(this.state.picture);
     return (
       <div className="PictureForm">
         <Form id="picture-form">
@@ -113,13 +112,13 @@ class SetPicture extends React.Component {
             onCapture={this.addEncodedImageFile}
           />
         </Form>
-        <Button
+        {/* <Button
           variant="secondary"
           className="FallBack"
-          onClick={this.addFileToImage}
+          onClick={this.setDefaultImageInState}
         >
           Fall Back Image
-        </Button>
+        </Button> */}
       </div>
     );
   }

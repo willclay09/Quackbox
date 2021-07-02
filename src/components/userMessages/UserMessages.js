@@ -55,7 +55,11 @@ class UserMessages extends React.Component {
   render() {
     const noMessages =
       this.state.messages.length === 0 ? (
-        <img className="Quackless" src="images/nothing-to-quack-about.png" />
+        <img
+          className="Quackless"
+          src="images/nothing-to-quack-about.png"
+          alt="No Quacks "
+        />
       ) : undefined;
 
     return (
@@ -71,7 +75,7 @@ class UserMessages extends React.Component {
                   <div className="UserName">User Name: {message.username}</div>
                   <img
                     className="Avatar3"
-                    src="images/rubber-duck.jpg"
+                    src="/images/rubber-duck.jpg"
                     alt="Icon"
                   ></img>
                   <div className="MessageText">Message: {message.text}</div>

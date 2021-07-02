@@ -62,7 +62,7 @@ class MessageList extends React.Component {
   unlikeMessage(messageLikes) {
     console.log(messageLikes);
     let login = JSON.parse(window.localStorage.getItem("login"));
-    console.log(login.result.username);
+    // console.log(login.result.username);
 
     let likeObject = messageLikes.find(
       (likeObject) => likeObject.username === login.result.username
@@ -71,7 +71,7 @@ class MessageList extends React.Component {
     if (likeObject) {
       console.log(likeObject);
       this.client.deleteLikes(likeObject.id).then((result) => {
-        console.log(result.data);
+        // console.log(result.data);
         this.getListOfMessages();
       });
     }
@@ -96,7 +96,7 @@ class MessageList extends React.Component {
                           </div>
                           <img
                             className="Avatar"
-                            src="images/rubber-duck.jpg"
+                            src="/images/rubber-duck.jpg"
                             alt="Icon"
                           ></img>
                           <div className="MessageText">

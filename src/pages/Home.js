@@ -20,8 +20,9 @@ class Home extends React.Component {
           <Col>
             <h2 className="Squeaky">Keep It Squeaky Clean</h2>
             <Image
-              src="https://i.pinimg.com/originals/ca/19/8f/ca198f74f61b0978395aa5dd4deb4ec5.jpg"
+              className="thumbnail"
               thumbnail
+              src="./images/computer.png"
             />
           </Col>
           <Col>
