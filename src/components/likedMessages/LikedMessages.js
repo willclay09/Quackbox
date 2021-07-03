@@ -38,7 +38,7 @@ class LikedMessages extends React.Component {
     return this.client.mostLikedMessages().then((messages) => {
       console.log({ messages });
       this.setState({ messages });
-      // this.getListOfMessages();
+      this.getListOfLikedMessages();
     });
   }
 
