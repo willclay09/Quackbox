@@ -43,11 +43,11 @@ h2 {
   font-weight: bold;
 }
 
-/* @media (min-width: 576px) {
+@media (min-width: 576px) {
   .modal-dialog {
     max-width: 100% !important;
   }
-} */
+}
 .MessageList {
   display: block;
   width: 100%;
@@ -93,6 +93,9 @@ h2 {
 .container {
   width: 60%;
 }
+.carousel-item img {
+  width: 50%;
+}
 @media only screen and (max-width: 549px) {
   body {
     display: flex;
@@ -121,4 +124,7 @@ h2 {
 }
 .textContainer {
   display: none;
+}
+.carousel-item img {
+  width: 50%;
 }

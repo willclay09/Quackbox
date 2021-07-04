@@ -11,7 +11,7 @@ import Image from "react-bootstrap/Image";
 class CreateUser extends React.Component {
   render() {
     return (
-      <div className="Home">
+      <div className="NewUser">
         <Menu />
         <Row>
           <Col>
