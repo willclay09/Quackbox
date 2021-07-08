@@ -6,9 +6,14 @@
   background-color: #d8d8d8;
   border-radius: 50px;
   transition: transform 0.2s;
+  font-size: 8px;
+  width: 200px;
+  height: 300px;
 }
 .UserCard:hover {
   transform: scale(1.5);
+  font-size: large;
+  height: unset;
 }
 .UserCard img {
   margin: 0 auto 0 5px;

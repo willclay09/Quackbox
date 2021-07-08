@@ -9,8 +9,10 @@ import AllMessages from "../allMessages/AllMessages";
 import TextContainer from "../textContainer/TextContainer";
 import { Form } from "react-bootstrap";
 
-const endpoint =
-  "http://localhost:3001" || "https://quackbox-backend.herokuapp.com/";
+const endpoint = window.location.href.includes("localhost")
+  ? "http://localhost:3001"
+  : "https://quackbox-backend.herokuapp.com/";
+
 const socket = io(endpoint);
 
 function InstaQuack({ location }) {

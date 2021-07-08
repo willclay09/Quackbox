@@ -38,10 +38,11 @@ class LikedMessages extends React.Component {
     return this.client.mostLikedMessages().then((messages) => {
       console.log({ messages });
       this.setState({ messages });
-      this.getListOfLikedMessages();
+      setTimeout(() => {
+        this.getListOfLikedMessages();
+      }, 10000);
     });
   }
-
   render() {
     return (
       <div className="pageWrap">
