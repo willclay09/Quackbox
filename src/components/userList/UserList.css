@@ -7,8 +7,8 @@
   border-radius: 50px;
   transition: transform 0.2s;
   font-size: 8px;
-  width: 200px;
-  height: 300px;
+  width: 225px;
+  height: 350px;
 }
 .UserCard:hover {
   transform: scale(1.5);
@@ -16,7 +16,7 @@
   height: unset;
 }
 .UserCard img {
-  margin: 0 auto 0 5px;
+  margin: 0 auto 0 33px;
   display: flex;
   flex-direction: row;
   height: var(--image-size);
