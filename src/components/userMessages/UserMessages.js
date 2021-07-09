@@ -41,7 +41,9 @@ class UserMessages extends React.Component {
       this.setState({
         messages: result.data.messages,
       });
-      this.getListOfMessages();
+      setTimeout(() => {
+        this.getListOfMessages();
+      }, 10000);
     });
   }
 
