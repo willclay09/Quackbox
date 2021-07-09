@@ -13,7 +13,7 @@ const endpoint = window.location.href.includes("localhost")
   ? "http://localhost:3001"
   : "https://quackbox-backend.herokuapp.com/";
 
-const socket = io(endpoint, { withCredentials: true });
+const socket = io(endpoint);
 
 function InstaQuack({ location }) {
   const [name, setName] = useState("");
