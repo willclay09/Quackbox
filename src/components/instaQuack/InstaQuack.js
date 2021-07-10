@@ -9,11 +9,19 @@ import AllMessages from "../allMessages/AllMessages";
 import TextContainer from "../textContainer/TextContainer";
 import { Form } from "react-bootstrap";
 
+const handleJsonResponse = (res) => {
+  if (res.ok) {
+    return res.json();
+  }
+  return res.json().then((result) => {
+    throw result;
+  });
+};
 const ENDPOINT = window.location.href.includes("localhost")
   ? "http://localhost:3001"
   : "https://quackbox-backend.herokuapp.com/";
 
-const socket = io(ENDPOINT);
+const socket = io(ENDPOINT, handleJsonResponse);
 
 function InstaQuack({ location }) {
   const [name, setName] = useState("");
