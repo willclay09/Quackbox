@@ -9,11 +9,11 @@ import AllMessages from "../allMessages/AllMessages";
 import TextContainer from "../textContainer/TextContainer";
 import { Form } from "react-bootstrap";
 
-const endpoint = window.location.href.includes("localhost")
+const ENDPOINT = window.location.href.includes("localhost")
   ? "http://localhost:3001"
   : "https://quackbox-backend.herokuapp.com/";
 
-const socket = io(endpoint);
+const socket = io(ENDPOINT);
 
 function InstaQuack({ location }) {
   const [name, setName] = useState("");
@@ -39,7 +39,7 @@ function InstaQuack({ location }) {
 
       socket.off();
     };
-  }, [endpoint, location.search]);
+  }, [ENDPOINT, location.search]);
 
   useEffect(() => {
     socket.on("message", (message) => {
