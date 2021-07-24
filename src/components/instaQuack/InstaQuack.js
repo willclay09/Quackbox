@@ -9,7 +9,9 @@ import AllMessages from "../allMessages/AllMessages";
 import TextContainer from "../textContainer/TextContainer";
 import { Form } from "react-bootstrap";
 
-const ENDPOINT = window.location.href.includes("localhost")
+const ENDPOINT = window.location.href.includes(
+  "https://quackbox-backend.herokuapp.com/"
+)
   ? "http://localhost:3001"
   : "https://quackbox-backend.herokuapp.com/";
 
