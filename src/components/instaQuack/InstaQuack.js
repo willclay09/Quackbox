@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import queryString from "query-string";
-import * as io from "socket.io-client";
+import { io } from "socket.io-client";
 import { userIsAuthenticated } from "../../redux/HOCs";
 import "./InstaQuack.css";
 import InfoBar from "../infobar/InfoBar";
@@ -9,19 +9,17 @@ import AllMessages from "../allMessages/AllMessages";
 import TextContainer from "../textContainer/TextContainer";
 import { Form } from "react-bootstrap";
 
-// const handleJsonResponse = (res) => {
-//   if (res.ok) {
-//     return res.json();
-//   }
-//   return res.json().then((result) => {
-//     throw result;
-//   });
-// };
 const ENDPOINT = window.location.href.includes("localhost")
   ? "http://localhost:3001"
   : "https://quackbox-backend.herokuapp.com/";
 
-const socket = io(ENDPOINT);
+const socket = io(ENDPOINT, {
+  transports: ["websocket", "polling"],
+});
+socket.on("connect_error", () => {
+  // revert to classic upgrade
+  socket.io.opts.transports = ["polling", "websocket"];
+});
 
 function InstaQuack({ location }) {
   const [name, setName] = useState("");
