@@ -10,10 +10,16 @@ import TextContainer from "../textContainer/TextContainer";
 import { Form } from "react-bootstrap";
 
 const ENDPOINT = window.location.href.includes("localhost")
-  ? "wss://localhost:3001/chat"
-  : "wss://quackbox-backend.herokuapp.com/chat";
+  ? "//localhost:3001/socket-io"
+  : "//quackbox-backend.herokuapp.com/socket-io";
 
-const socket = io(ENDPOINT, { transports: ["websocket"] });
+const socket = io(ENDPOINT, {
+  // transports: ["websocket"],
+  "force new connection": true,
+  reconnectionAttempts: "Infinity",
+  timeout: 10000,
+});
+console.log("SANITY CHECK");
 
 function InstaQuack({ location }) {
   const [name, setName] = useState("");
