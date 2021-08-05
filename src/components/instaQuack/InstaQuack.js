@@ -9,19 +9,11 @@ import AllMessages from "../allMessages/AllMessages";
 import TextContainer from "../textContainer/TextContainer";
 import { Form } from "react-bootstrap";
 
-const ENDPOINT = window.location.href.includes(
-  "https://quackbox-backend.herokuapp.com/"
-)
+const ENDPOINT = window.location.href.includes("localhost")
   ? "http://localhost:3001"
   : "https://quackbox-backend.herokuapp.com/";
 
-const socket = io(ENDPOINT, {
-  transports: ["websocket", "polling"],
-});
-socket.on("connect_error", () => {
-  // revert to classic upgrade
-  socket.io.opts.transports = ["polling", "websocket"];
-});
+const socket = io(ENDPOINT, { transports: ["websocket"] });
 
 function InstaQuack({ location }) {
   const [name, setName] = useState("");
