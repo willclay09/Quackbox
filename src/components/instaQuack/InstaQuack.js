@@ -10,11 +10,12 @@ import TextContainer from "../textContainer/TextContainer";
 import { Form } from "react-bootstrap";
 
 const ENDPOINT = window.location.href.includes("localhost")
-  ? "//localhost:3001/socket-io"
-  : "//quackbox-backend.herokuapp.com/socket-io";
+  ? "//localhost:5000"
+  : "//quackbox-backend.herokuapp.com";
+// : "//157.230.11.177:3001";
 
 const socket = io(ENDPOINT, {
-  // transports: ["websocket"],
+  transports: ["websocket"],
   "force new connection": true,
   reconnectionAttempts: "Infinity",
   timeout: 10000,
