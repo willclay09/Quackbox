@@ -12,15 +12,13 @@ import { Form } from "react-bootstrap";
 const ENDPOINT = window.location.href.includes("localhost")
   ? "//localhost:5000"
   : "//quackbox-backend.herokuapp.com";
-// : "//157.230.11.177:3001";
 
 const socket = io(ENDPOINT, {
-  // transports: ["websocket"],
+  // transports: ["websocket"], // Uncomment this on both here and the backend if you want to restrict the socketio connection to Web Sockets, eliminating HTTP long-polling.
   "force new connection": true,
   reconnectionAttempts: "Infinity",
   timeout: 10000,
 });
-console.log("SANITY CHECK");
 
 function InstaQuack({ location }) {
   const [name, setName] = useState("");
