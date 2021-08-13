@@ -15,7 +15,7 @@ const ENDPOINT = window.location.href.includes("localhost")
 // : "//157.230.11.177:3001";
 
 const socket = io(ENDPOINT, {
-  transports: ["websocket"],
+  // transports: ["websocket"],
   "force new connection": true,
   reconnectionAttempts: "Infinity",
   timeout: 10000,
