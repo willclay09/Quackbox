@@ -17,6 +17,8 @@ function Join() {
             placeholder="Name"
             className="joinInput"
             type="text"
+            minLength="3"
+            maxLength="20"
             onChange={(event) => setName(event.target.value)}
           ></Form.Control>
         </div>
@@ -25,6 +27,8 @@ function Join() {
             placeholder="Room"
             className="joinInput"
             type="text"
+            minLength="3"
+            maxLength="20"
             onChange={(event) => setRoom(event.target.value)}
           ></Form.Control>
         </div>
