@@ -17,20 +17,20 @@ function Join() {
             placeholder="Name"
             className="joinInput"
             type="text"
-            minLength="3"
-            maxLength="20"
             onChange={(event) => setName(event.target.value)}
-          ></Form.Control>
+            minLength="3"
+            maxLength="15"
+          />
         </div>
         <div>
           <Form.Control
             placeholder="Room"
             className="joinInput"
             type="text"
-            minLength="3"
-            maxLength="20"
             onChange={(event) => setRoom(event.target.value)}
-          ></Form.Control>
+            minLength="3"
+            maxLength="15"
+          />
         </div>
         <Link
           onClick={(event) => (!name || !room ? event.preventDefault() : null)}
